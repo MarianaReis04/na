@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Orçamento</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
+    <script>
+        function afixar(orcamento){
+            valor = document.orcamento.VALOR.value;
+            valor1 = document.orcamento.VALOR1.value;
+            valor2 = document.orcamento.VALOR2.value;
+            valor3 = document.orcamento.VALOR3.value;
+            vezes = document.orcamento.VEZES.value;
+            var total = 0; 
+            var div = 0;
+            total = ((parseInt (valor)) + (parseInt(valor1)) + (parseInt (valor2)) + (parseInt (valor3))); 
+            divi = (total / (parseInt(vezes)));
+          
+
+            document.orcamento.sim.value = total;
+
+
+        }
+
+
+    </script>
+</head>
+<body > Mariana_Reis04
+
+    
+    <form name="orcamento"> 
+    <table border="4">
+        <tr bgcolor="339999" >
+            <td whidth="80" align="center" >Vendas do Mes</td>
+            
+           
+              <td>  <input type="text" name="VEZES" value=""> </td>
+             
+                <td >
+             
+                </td>
+          </tr>
+
+
+          <tr bgcolor="99FFCC">
+            <td width="80" >Nome</td>
+            <td width="40" align="center" colspan="3">Produto</td>
+            <td align="center" >vendas</td>
+          </tr>
+
+       
+         <tr bgcolor="99FFCC" >
+            <td whidth="80" align="center">
+                <input type="text" name="COD" value="">
+            </td>
+            <td width="40" align="center" colspan="3">
+                <input type="text" name="DESC" value="" maxlength="180">
+            </td>
+            <td align="center">
+                <input type="text" name="VALOR" value="" <td width="80" align="center" colspan="5">
+</tr> 
+
+
+              <tr bgcolor="99FFCC">     
+            <td whidth="80" align="center">
+                <input type="text" name="COD1" value="">
+            </td>
+            <td width="40" align="center" colspan="3">
+                <input type="text" name="DESC1" value="" maxlength="180">
+            </td>
+            <td align="center">
+                <input type="text" name="VALOR1" value="">
+            </td>
+         </tr>
+
+
+
+          <tr bgcolor="99FFCC" >
+            <td whidth="80" align="center">
+                <input type="text" name="COD2" value="">
+            </td>
+            <td width="40" align="center" colspan="3">
+                <input type="text" name="DESC2" value="" maxlength="180">
+            </td>
+            <td align="center">
+                <input type="text" name="VALOR2" value="">
+            </td>
+         </tr>
+
+
+          <tr bgcolor="99FFCC" >
+            <td whidth="80" align="center">
+                <input type="text" name="COD3" value="">
+            </td>
+            <td width="40" align="center" colspan="3">
+                <input type="text" name="DESC3" value="" maxlength="180">
+            </td>
+            <td align="center">
+                <input type="text" name="VALOR3" value="">
+            </td>
+         </tr>
+
+
+
+         <tr bgcolor="99FFCC">
+            <td width="40">total</td>
+            <td width="80" align="center" colspan="5">
+            <input type="text" size="50" name="sim" value="" disabled>
+         </tr>
+
+
+         <tr bgcolor="99FFCC">
+          <td width="80" align="center" colspan="5">
+            <input type="button" name="botao" value="Calcular" onClick="afixar(orcamento)"> </td></tr>
+
+    </table>
+    </form>
+
+</body>
+</html>
